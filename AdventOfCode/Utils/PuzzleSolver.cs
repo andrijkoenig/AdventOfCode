@@ -49,9 +49,9 @@ public static class PuzzleSolver
     {
         // Instantiate the puzzle using reflection
         var puzzleInstance = Activator.CreateInstance(puzzleType) as dynamic;
+
         var year = puzzleType.Namespace.Split('.').Last().Substring(1);
-
-
+        
         // Call SolvePart1 and SolvePart2 and return results
         string part1Result = puzzleInstance?.SolvePart1() ?? throw new InvalidOperationException();
         string part2Result = puzzleInstance?.SolvePart2() ?? throw new InvalidOperationException();

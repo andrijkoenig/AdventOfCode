@@ -5,7 +5,6 @@ namespace AdventOfCode.Utils;
 internal static class InputAttributeHelper
 {
     public static IEnumerable<string> ReadInput<T>() where T: IPuzzleInterface {
-
         var puzzleType = typeof(T);
         var puzzlePath = puzzleType.FullName!.Split('.')[^2..].ToList(); // Gets "2024/day01" from namespace
         var puzzleYear = puzzlePath[0].Substring(1); // Removes the '_'

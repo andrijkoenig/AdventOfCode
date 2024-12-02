@@ -18,9 +18,13 @@ public static class PuzzleResultPrinter
         PrintHeader(headers, columnWidths);
         PrintSeparator(columnWidths);
 
-        foreach (var result in results) PrintRow(GetRowValues(result, headers), columnWidths);
+        var yearlyResults = results.GroupBy(x => x.Year);
 
-        PrintSeparator(columnWidths);
+        foreach (var yearlyResult in yearlyResults)
+        {
+            foreach(var result in yearlyResult) PrintRow(GetRowValues(result, headers), columnWidths);
+            PrintSeparator(columnWidths);
+        }
     }
 
     /// <summary>
