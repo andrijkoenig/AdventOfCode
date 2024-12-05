@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Input\2024\" />
+    <Folder Include="Input\2015\" />
   </ItemGroup>
 
 </Project>

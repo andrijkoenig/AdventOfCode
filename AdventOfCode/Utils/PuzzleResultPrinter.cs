@@ -4,6 +4,10 @@ namespace AdventOfCode.Utils;
 
 public static class PuzzleResultPrinter
 {
+    public static void PrettyPrint(PuzzleResult result) {
+        PrettyPrint([result]);
+    }
+
     public static void PrettyPrint(IEnumerable<PuzzleResult> results)
     {
         if (!results.Any())
