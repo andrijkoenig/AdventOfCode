@@ -6,4 +6,4 @@ using AdventOfCode.Utils;
 
 
 
-PuzzleResultPrinter.PrettyPrint(PuzzleSolver.RunPuzzle<Day03>());
+PuzzleResultPrinter.PrettyPrint(PuzzleSolver.RunPuzzle<Day04>());
