@@ -1,4 +1,4 @@
-﻿using AdventOfCode.Puzzles._2015;
+﻿using AdventOfCode.Puzzles._2024;
 using AdventOfCode.Utils;
 
 //var result = PuzzleSolver.RunAllPuzzles();
@@ -6,4 +6,4 @@ using AdventOfCode.Utils;
 
 
 
-PuzzleResultPrinter.PrettyPrint(PuzzleSolver.RunPuzzle<Day22>());
+PuzzleResultPrinter.PrettyPrint(PuzzleSolver.RunPuzzle<Day03>());
